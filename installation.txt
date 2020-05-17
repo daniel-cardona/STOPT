@@ -30,16 +30,24 @@
 19->cp -r lib ../STOPT/ipopt/lib
 
 -----------------------------------------
+	ADD eigen library
+-----------------------------------------
+20-> cd ../STOPT
+21-> git clone https://gitlab.com/libeigen/eigen.git
+
+
+-----------------------------------------
 COMPILE STOPT AND EXECUTE A SIMPLE TEST
 -----------------------------------------
 
-20->cd ../STOPT/OCsolver
+20->cd OCsolver
 
 21->mkdir build
 22->cd build
 23->cmake .. && make
 
-24->./test
+24->./obstacle
+
 
 
 
