@@ -1,0 +1,2 @@
+# STOPT
+Sparse Trapezoidal Optimization
