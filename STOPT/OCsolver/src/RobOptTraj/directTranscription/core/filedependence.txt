@@ -1,0 +1,4 @@
+main/problemDefinition.h 
+main/setup.h
+main/trajSolver.h
+main/userFunctions.h

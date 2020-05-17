@@ -1,0 +1,98 @@
+<Robot FileName="/home/daniel/Documentos/Maestria/RobOptTraj-OpenHRC/OCsolver/data/5dof.xml" DEFName="NAO_blue" DoF="5" NaoVersion="V5">
+
+
+<!-- ********** KINEMATIC PROPERTIES (JOINTS) ********** -->
+
+
+	<Joint name="Joint1" Type="Revolute">
+	   <parent link="ROOT"/>
+	   <child link="base"/>
+	   <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+	   <axis xyz="0 0 1"/>
+	   <Limit Max="1.0" Min="-1.0"/>
+	</Joint>
+
+	<Joint name="Joint2" Type="Revolute">
+	   <parent link="base"/>
+	   <child link="Link1"/>
+	   <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+	   <axis xyz="0 1 0"/>
+	   <Limit Max="1.0" Min="-1.0"/>
+	</Joint>
+
+	<Joint name="Joint3" Type="Revolute">
+	   <parent link="Link1"/>
+	   <child link="Link2"/>
+	   <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.01"/>
+	   <axis xyz="1 0 0"/>
+	   <Limit Max="1.0" Min="-1.0"/>
+	</Joint>
+
+	<Joint name="Joint4" Type="Revolute">
+	   <parent link="Link2"/>
+	   <child link="Link3"/>
+	   <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.05"/>
+	   <axis xyz="1 0 0"/>
+	   <Limit Max="1.0" Min="-1.0"/>
+	</Joint>
+
+	<Joint name="Joint5" Type="Revolute">
+	   <parent link="Link3"/>
+	   <child link="Link4"/>
+	   <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.03"/>
+	   <axis xyz="1 0 0"/>
+	   <Limit Max="1.0" Min="-1.0"/>
+	</Joint>
+
+
+<!-- ********** INERTIAL PROPERTIES (LINKS) ********** -->
+
+	<link name="base">
+	   <inertial>
+		<mass value="0.0"/>
+		<origin rpy="0.0 0.0 0.0" xyz="0.0, 0.0, 0.0"/>
+		<inertia ixx="0" ixy="0" ixz="0"
+			 iyy="0" iyz="0" izz="0"/>
+	   </inertial>
+	</link>
+
+	<link name="Link1">
+	   <inertial>
+		<mass value="1.0"/>
+		<origin rpy="0.0 0.0 0.0" xyz="0.0, 0.0, 0.0"/>
+		<inertia ixx="1" ixy="0" ixz="0"
+			 iyy="1" iyz="0" izz="1"/>
+	   </inertial>
+	</link>
+
+	<link name="Link2">
+	   <inertial>
+		<mass value="1.0"/>
+		<origin rpy="0.0 0.0 0.0" xyz="0.0, 0.0, 0.0"/>
+		<inertia ixx="1" ixy="0" ixz="0"
+			 iyy="1" iyz="0" izz="1"/>
+	   </inertial>
+	</link>
+
+	<link name="Link3">
+	   <inertial>
+		<mass value="1.0"/>
+		<origin rpy="0.0 0.0 0.0" xyz="0.0, 0.0, 0.0"/>
+		<inertia ixx="1" ixy="0" ixz="0"
+			 iyy="1" iyz="0" izz="1"/>
+	   </inertial>
+	</link>
+
+
+	<link name="Link4">
+	   <inertial>
+		<mass value="1.0"/>
+		<origin rpy="0.0 0.0 0.0" xyz="0.0, 0.0, 0.0"/>
+		<inertia ixx="1" ixy="0" ixz="0"
+			 iyy="1" iyz="0" izz="1"/>
+	   </inertial>
+	</link>
+
+</Robot>
+
+
